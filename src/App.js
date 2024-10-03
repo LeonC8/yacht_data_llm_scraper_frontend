@@ -14,7 +14,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://web-production-f6a3.up.railway.app/extract-yacht-data/', 
+      const response = await axios.post('https://web-production-f6a3.up.railway.app/extract-yacht-data/', 
         { url: url },
         {
           headers: { 'Content-Type': 'application/json' },
