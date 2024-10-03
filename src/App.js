@@ -14,11 +14,13 @@ function App() {
     setLoading(true);
 
     try {
+      const formData = new FormData();
+      formData.append('url', url);
+      
       const response = await axios.post('https://web-production-f6a3.up.railway.app/extract-yacht-data/', 
-        { url: url },
+        formData,
         {
-          headers: { 'Content-Type': 'application/json' },
-          // Remove withCredentials: true
+          headers: { 'Content-Type': 'multipart/form-data' },
         }
       );
 
