@@ -17,7 +17,7 @@ function App() {
       const formData = new FormData();
       formData.append('url', url);
 
-      const response = await axios.post('https://9799-86-33-67-81.ngrok-free.app/extract-yacht-data/', 
+      const response = await axios.post('https://web-production-f6a3.up.railway.app/extract-yacht-data/', 
         formData,
         {
           headers: { 'Content-Type': 'multipart/form-data' },
